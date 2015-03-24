@@ -13,3 +13,8 @@ Current Status
  *	Min 10Gb of free memory/RAM
  *	Virtual box
  
+
+To Do
+=====================
+* Script for hadoop installation
+ 
