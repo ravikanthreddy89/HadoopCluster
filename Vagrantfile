@@ -65,8 +65,6 @@ Vagrant.configure(2) do |config|
      slave3.vm.network :public_network, ip:"192.168.12.63"
      slave3.vm.hostname="slave3"
      slave3.vm.provision "shell" , path : "provision.sh"
-     #slave3.vm.provision :hostmanager
-  end
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
