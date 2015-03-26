@@ -12,7 +12,7 @@
 
  <property>
         <name>hadoop.tmp.dir</name>
-        <value>/app/hadoop/tmp</value>
+        <value>/home/vagrant/app/hadoop/tmp</value>
  </property>
 
 </configuration>

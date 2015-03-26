@@ -29,7 +29,7 @@ Vagrant.configure(2) do |config|
      master.vm.network :public_network, ip:"192.168.12.60"
 #    master.vm.network :bridged, :bridge=>eth0 
      master.vm.hostname="master"
-     master.vm.provision "shell", path:"provision.sh"
+     master.vm.provision "shell", path: "provision.sh"
      #master.vm.provision :hostmanager
   end
 
@@ -41,7 +41,7 @@ Vagrant.configure(2) do |config|
      end
      slave1.vm.network :public_network, ip:"192.168.12.61"
      slave1.vm.hostname="slave1"
-     slave1.vm.provision "shell" , path : "provision.sh"
+     slave1.vm.provision "shell" , path: "provision.sh"
      #slave1.vm.provision :hostmanager
   end
 
@@ -53,7 +53,7 @@ Vagrant.configure(2) do |config|
      end
      slave2.vm.network :public_network, ip:"192.168.12.62"
      slave2.vm.hostname="slave2"
-     slave2.vm.provision "shell", path : "provision.sh"
+     slave2.vm.provision "shell", path: "provision.sh"
      #slave2.vm.provision :hostmanager
   end
 
@@ -64,8 +64,8 @@ Vagrant.configure(2) do |config|
      end
      slave3.vm.network :public_network, ip:"192.168.12.63"
      slave3.vm.hostname="slave3"
-     slave3.vm.provision "shell" , path : "provision.sh"
-
+     slave3.vm.provision "shell" , path: "provision.sh"
+  end
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.

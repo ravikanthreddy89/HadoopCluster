@@ -24,6 +24,7 @@ tar -zxvf /home/vagrant/hadoop-1.2.1-bin.tar.gz
 echo "Successfully extracted hadoop."
 
   #hadoop configuration
+  sudo chown -R vagrant /home/vagrant/hadoop-1.2.1
   cd /home/vagrant/hadoop-1.2.1/conf
   #Configure core-site.xml, mapred-site.xml, hdfs-site.xml, hadoop-env.sh
   echo "Configuring hadoop."
@@ -41,9 +42,9 @@ echo "Successfully extracted hadoop."
    
   # create data directories for hadoop and set the permissions
   echo "Creating hadoop data directories."
-  sudo mkdir /app/hadoop/tmp
+  sudo mkdir -p /app/hadoop/tmp
   sudo chmod 750 /app/hadoop/tmp
-  sudo chown vagrant /app/hadoop/tmp
+  sudo chown -R vagrant /app/hadoop/tmp
   echo "Hadoop data directories created."
   # add hadoop bin the path
   echo "Adding hadoop bin to path variable."
