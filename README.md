@@ -13,6 +13,8 @@ Current Status
  *	Min 10Gb of free memory/RAM
  *	Virtual box
  *	Hadoop 
+ 	
+ 
 Notes : Download jdk & hadoop, place them in the same directory as Vagrant file
  
 
