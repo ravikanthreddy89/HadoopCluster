@@ -43,7 +43,7 @@ echo "Successfully extracted hadoop."
   # create data directories for hadoop and set the permissions
   echo "Creating hadoop data directories."
   sudo mkdir -p /app/hadoop/tmp
-  sudo chmod 750 /app/hadoop/tmp
+  sudo chmod -R 750 /app/hadoop/tmp
   sudo chown -R vagrant /app/hadoop/tmp
   echo "Hadoop data directories created."
   # add hadoop bin the path
